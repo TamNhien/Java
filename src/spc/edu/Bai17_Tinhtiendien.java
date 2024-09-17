@@ -21,8 +21,8 @@ public class Bai17_Tinhtiendien {
         double[] mocArray = {50,100,200,300,400};
         double[] giaArray = {1806,1866,2167,2729,3050,3151};
         
-        double premoc=0;
-        for(int i=0; i < mocArray.length; i++){
+        double premoc = 0;
+        for(int i = 0; i < mocArray.length; i++){
             if (tieuthu > mocArray[i]){
                 thanhtien += (mocArray[i] - premoc) * giaArray[i];
                 premoc = mocArray[i];
