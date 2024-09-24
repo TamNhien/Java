@@ -19,7 +19,6 @@ public class Bai24_ArrayList1 {
         ArrayList b = new ArrayList();
         
         for (int i = 1; i < 10; i++){
-            //String x = b.get(""+i+"");
             b.add(i);
             
         }
@@ -28,9 +27,7 @@ public class Bai24_ArrayList1 {
         b.removeLast();
         System.out.print("ArrayList b: ");
         for (int i = 0; i < b.size(); i++){
-           //String x = (String) ;
             System.out.print(b.get(i) + " ");
-            //b.remove(7);
         }
     }
 }
