@@ -1,15 +1,16 @@
-package spc.edu;
+package spc.edu.moi;
 import java.util.Scanner;
+
 /**
  *
- * @author Administrator
+ * @author Admin
  */
-public class Bai9_LuyThua {
+public class LuyThua {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Nhap co so: ");
+        System.out.print("Nhap cs: ");
         int cs = sc.nextInt();
-        System.out.print("Nhap so mu: ");
+        System.out.print("Nhap sm: ");
         int sm = sc.nextInt();
         System.out.println(cs + " ^ " + sm + " = " + Math.pow(cs, sm));
     }

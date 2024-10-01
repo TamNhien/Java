@@ -1,7 +1,7 @@
-package spc.edu;
+package spc.edu.moi;
 import java.util.Scanner;
 
-public class Bai4_TongHieuTichThuong {
+public class TongHieuTichThuong {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap a: ");
