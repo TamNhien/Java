@@ -3,14 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package spc.edu;
-import  java.util.Scanner;
-import spc.edu.SinhVien;
+import java.util.Scanner;
+import spc.edu.moi.SinhVien;
 /**
  *
  * @author Administrator
  */
-
-
 
 public class Bai29_SapXepObject {
     public static void main(String[] args) {
