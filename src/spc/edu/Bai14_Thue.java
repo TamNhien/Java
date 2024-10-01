@@ -1,38 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package spc.edu;
-import  java.util.Scanner;
-/**
- *
- * @author Administrator
- */
+import java.util.Scanner;
+
 public class Bai14_Thue {
     public static void main(String[] args) {
-        System.out.println("Tinh Thue");
         Scanner sc = new Scanner(System.in);
-        double luong, thuong, thunhap, thue;
         System.out.print("Nhap luong: ");
-        luong = sc.nextDouble();
+        double luong = sc.nextDouble();
         System.out.print("Nhap thuong: ");
-        thuong = sc.nextDouble();
-        System.out.print("Thue thu nhap: ");
-        thunhap = luong + thuong;
-        if (thunhap < 9){
+        double thuong = sc.nextDouble();
+        double thunhap = luong + thuong;
+        double thue = tinhThue(thunhap);
+        
+        if (thue == 0) {
             System.out.println("Khong dong thue");
+        } else {
+            System.out.printf("Thue la: %.2f trieudong\n", thue);
         }
-        else if (9 < thunhap && thunhap < 15){
-            thue = thunhap*0.1;
-            System.out.printf("Thue la: %.2f trieudong\n",thue);
-        }
-        else if (15 < thunhap && thunhap < 30){
-            thue = thunhap*0.15;
-            System.out.printf("Thue la: %.2f trieudong\n",thue);
-        }
-        else {
-            thue = thunhap*0.2;
-            System.out.printf("Thue la: %.2f trieudong\n",thue);
-        }
+    }
+    private static double tinhThue(double thunhap) {
+        if (thunhap < 9) return 0;
+        if (thunhap < 15) return thunhap * 0.1;
+        if (thunhap < 30) return thunhap * 0.15;
+        return thunhap * 0.2;
     }
 }
