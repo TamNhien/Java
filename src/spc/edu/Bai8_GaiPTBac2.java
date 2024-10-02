@@ -1,12 +1,8 @@
 package spc.edu;
 import java.util.Scanner;
-/**
- *
- * @author Administrator
- */
+
 public class Bai8_GaiPTBac2 {
     public static void main(String[] args) {
-        System.out.println("Giai PT Bac 2");
         double a, b, c, delta, x1, x2;
         Scanner sc = new Scanner(System.in);
         System.out.print("Nhap a: ");

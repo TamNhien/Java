@@ -1,14 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package spc.edu;
 import java.util.Scanner;
 import spc.edu.moi.SinhVien;
-/**
- *
- * @author Administrator
- */
 
 public class Bai29_SapXepObject {
     public static void main(String[] args) {
@@ -43,15 +35,15 @@ public class Bai29_SapXepObject {
         
         for (int j = 0; j < n; j++){
             System.out.print("Ho va ten SV: " + sv[j].getTen());
-            System.out.print("Diem SV: " + sv[j].getDiem());
+            System.out.print("\nDiem SV: " + sv[j].getDiem());
             if(sv[j].getDiem() < 5){
-                System.out.println("Hoc luc yeu");
+                System.out.println("\nHoc luc yeu");
             }else if(sv[j].getDiem() <= 6){
-                System.out.println("Hoc luc TB");
+                System.out.println("\nHoc luc TB");
             }else if(sv[j].getDiem() < 8){
-                System.out.println("Hoc luc kha");
+                System.out.println("\nHoc luc kha");
             }else{
-                System.out.println("Hoc luc gioi");
+                System.out.println("\nHoc luc gioi");
             }
         }
     }

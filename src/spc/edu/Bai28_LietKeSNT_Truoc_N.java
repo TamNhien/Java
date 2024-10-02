@@ -1,20 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package spc.edu;
 import java.util.Scanner;
-/**
- *
- * @author Administrator
- */
+
 public class Bai28_LietKeSNT_Truoc_N {
     public static void lietKe(int n) {
         for(int i=3;i<n;i+=2){
             if(checkSNT(i))System.out.print(" " + i);
         }
     }
-    
     public static boolean checkSNT(int n){
         if (n < 2) return false;
         for (int i = 2; i <= Math.sqrt(n); i++){
@@ -22,7 +14,6 @@ public class Bai28_LietKeSNT_Truoc_N {
         }
         return true;
     }
-    
     public static int nhap(){
         Scanner sc = new Scanner(System.in);
         boolean check = false;
@@ -39,7 +30,6 @@ public class Bai28_LietKeSNT_Truoc_N {
         }
         return (n);
     }
-  
     public static void main(String[] args) {
         System.out.print("Nhap n: ");
         int n = nhap();

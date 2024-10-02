@@ -1,10 +1,6 @@
 package spc.edu.moi;
 import java.util.Scanner;
 
-/**
- *
- * @author Admin
- */
 public class GiaiPTBac2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,7 +14,7 @@ public class GiaiPTBac2 {
         
         if (a == 0)
             if (b == 0)
-                if(c != 0){
+                if(c != 0) {
                     System.out.println("PTVSN");
                 } else {
                     System.out.println("PTVN");
@@ -28,7 +24,7 @@ public class GiaiPTBac2 {
             }
         else {
             delta = b * b - 4 * a * c;
-            if (delta < 0){
+            if (delta < 0) {
                 System.out.println("PTVN");
             }
             else if (delta == 0) {
