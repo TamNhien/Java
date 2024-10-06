@@ -6,7 +6,7 @@ public class NhapThangXuatNgay {
         Scanner sc =new Scanner(System.in);
         System.out.print("Nhap thang: ");
         int month = sc.nextInt();
-        System.out.println("Nhap nam: ");
+        System.out.print("Nhap nam: ");
         int year = sc.nextInt();
         int days = DaysInMonth(month, year);
         System.out.printf("Thang %d nam %d co %d ngay.\n", month, year, days);
