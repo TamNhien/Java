@@ -12,6 +12,6 @@ public class UCLN_BTNN {
         System.out.printf("Boi chung nho nhat cua %d va %d la: %d\n", a, b, (a * b / UCLN(a, b)));
     }
     private static int UCLN(int a, int b) {
-        return b == 0 ? a : UCLN(b, a % b);  // Sử dụng đệ quy để tính UCLN
+        return b == 0 ? a : UCLN(b, a % b);
     }
 }
