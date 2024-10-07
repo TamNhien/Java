@@ -4,36 +4,24 @@ import java.util.Scanner;
 public class GiaiPTBac2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double a, b, c, delta, x1, x2;
         System.out.print("Nhap a: ");
-        a = sc.nextDouble();
+        double a = sc.nextDouble();
         System.out.print("Nhap b: ");
-        b = sc.nextDouble();
+        double b = sc.nextDouble();
         System.out.print("Nhap c: ");
-        c = sc.nextDouble();
+        double c = sc.nextDouble();
         
-        if (a == 0)
-            if (b == 0)
-                if(c != 0) {
-                    System.out.println("PTVSN");
-                } else {
-                    System.out.println("PTVN");
-                }
-            else {
-                System.out.println("PT co nghiem x1 = x2 = " + (-c / b));
-            }
-        else {
-            delta = b * b - 4 * a * c;
+        if (a == 0) {
+            System.out.println(b == 0 ? (c != 0 ? "PTVSN" : "PTVN") : "PT co nghiem x1 = x2 = " + (-c / b));
+        } else {
+            double delta = b * b - 4 * a * c;
             if (delta < 0) {
                 System.out.println("PTVN");
-            }
-            else if (delta == 0) {
-                System.out.println("PT có nghiem kep x1 = x2 = " + (-b / (2 * a)));
-            }
-            else {
-                x1 = (-b + Math.sqrt(delta)) / (2 * a);
-                x2 = (-b - Math.sqrt(delta)) / (2 * a);
-                System.out.println("PT co nghiem " + "\nx1 = " + x1 + "\nx2 = " + x2);
+            } else if (delta == 0) {
+                System.out.println("PT co nghiem kep x1 = x2 = " + (-b / (2 * a)));
+            } else {
+                double sqrtDelta = Math.sqrt(delta);
+                System.out.println("PT co nghiem\nx1 = " + ((-b + sqrtDelta) / (2 * a)) + "\nx2 = " + ((-b - sqrtDelta) / (2 * a)));
             }
         }
     }
