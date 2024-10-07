@@ -4,9 +4,8 @@ import java.util.Scanner;
 public class TinhTienVonVaLai {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double T;
         System.out.print("Nhap so tien gui ban dau (trieu dong): ");
-        T = sc.nextDouble();
+        double T = sc.nextDouble();
         
         for (int year = 1; year <= 15; year++){
             double tien_von = T * Math.pow(1 + 0.08, year);

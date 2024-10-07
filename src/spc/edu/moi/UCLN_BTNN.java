@@ -8,17 +8,10 @@ public class UCLN_BTNN {
         int a = sc.nextInt();
         System.out.print("Nhap b: ");
         int b = sc.nextInt();
-        
-        int ucln = UCLN(a, b);
-        System.out.println("Uoc chung lon nhat cua " + a + " va " + b + " la: " + ucln);
-        System.out.printf("Boi chung nho nhat cua %d va %d la: %d\n", a, b, (a * b / ucln));
+        System.out.println("Uoc chung lon nhat cua " + a + " va " + b + " la: " + UCLN(a, b));
+        System.out.printf("Boi chung nho nhat cua %d va %d la: %d\n", a, b, (a * b / UCLN(a, b)));
     }
-    private static int UCLN(int a, int b){
-        while (b != 0){
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-        return a;
+    private static int UCLN(int a, int b) {
+        return b == 0 ? a : UCLN(b, a % b);  // Sử dụng đệ quy để tính UCLN
     }
 }
