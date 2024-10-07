@@ -6,7 +6,7 @@ public class BangCuuChuong {
             for (int j = 1; j <= 10; j++) {
                 System.out.printf("%d x %d = %-4d\t", i, j, i * j);
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 }

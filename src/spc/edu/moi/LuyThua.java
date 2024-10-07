@@ -12,6 +12,6 @@ public class LuyThua {
         int cs = sc.nextInt();
         System.out.print("Nhap sm: ");
         int sm = sc.nextInt();
-        System.out.println(cs + " ^ " + sm + " = " + Math.pow(cs, sm));
+        System.out.println(cs + " ^ " + sm + " = " + (int)Math.pow(cs, sm));
     }
 }
